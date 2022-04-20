@@ -126,3 +126,44 @@ body {
 .app__platform:nth-child(2) {
   background-image: url('apple-button.png');
 }
+
+
+
+
+@media only screen and (max-width: 1024px) {
+ .conteiner {
+   width: 90%;
+ }
+}
+
+@media only screen and (max-width: 650px) {
+  body {
+    background-color: white;
+  }
+  .conteiner {
+    width: 90%;
+  }
+  .phone {
+    display: none;
+  }
+  .continue {
+    width: 100%;
+  }
+  .continue__group {
+    border: 1px solid transparent;
+  }
+}
+
+@media only screen and (max-width: 400px){
+    .container{
+        width: 100%
+    }
+
+    .phone{
+        display: none
+    }
+
+    .app{
+        display: none
+    }
+}
