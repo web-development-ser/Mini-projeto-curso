@@ -1,4 +1,4 @@
-* {
+* { /* raiz */
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -8,7 +8,7 @@
 }
 
 
-body {
+body { /* corpo */
   width: 100%;
   min-height: 100vh;
   background: rgb(243, 243, 243);
@@ -18,7 +18,7 @@ body {
   justify-content: center;
 }
 
-.conteiner {
+.conteiner { /* conteiner principal */
   display: flex;
   align-items: center;
   justify-content: start;
@@ -26,7 +26,7 @@ body {
   height: 100vh;
 }
 
-.phone {
+.phone { /* imagem um */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -96,7 +96,7 @@ body {
   color: #0095f6;
 }
 
-.app {
+.app { /* botões */
   display:flex;
   flex-direction: column;
   align-items: center;
@@ -129,7 +129,8 @@ body {
 
 
 
-
+/* flexibilidade dos dispositivos */
+/* max-width: 1024px / 650px / 400px */
 @media only screen and (max-width: 1024px) {
  .conteiner {
    width: 90%;
@@ -155,15 +156,14 @@ body {
 }
 
 @media only screen and (max-width: 400px){
-    .container{
-        width: 100%
-    }
+  .container {
+    width: 100%;
+  }
 
-    .phone{
-        display: none
-    }
-
-    .app{
-        display: none
-    }
+  .phone {
+    display: none
+  }
+  .app {
+    display: none
+  }
 }
